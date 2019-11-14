@@ -31,10 +31,11 @@ ruleTester.run("react-button-has-type", rule, {
 
     valid: [
         "<button type='button'></button>",
+        "<button type={thing}></button>",
     ],
 
     invalid: [
-        {
+      {
             code: "<button></button>",
             errors: [{
                 message: "Missing type attribute on button",
@@ -61,6 +62,6 @@ ruleTester.run("react-button-has-type", rule, {
                 message: "Button type property is empty",
                 type: "JSXElement"
             }]
-        }
+        },
     ]
 });
