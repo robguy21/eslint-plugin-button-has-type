@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-react-button-has-type",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Checks that all buttons have a non empty type attribute",
   "keywords": [
     "eslint",
