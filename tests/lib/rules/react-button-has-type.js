@@ -32,6 +32,7 @@ ruleTester.run("react-button-has-type", rule, {
     valid: [
         "<button type='button'></button>",
         "<button type={thing}></button>",
+        "<button type={thing.that || 'hello'}></button>",
     ],
 
     invalid: [
