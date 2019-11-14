@@ -1,16 +1,18 @@
 {
   "name": "eslint-plugin-react-button-has-type",
   "version": "0.0.0",
-  "description": "Checks that all buttons have a set type attribute",
+  "description": "Checks that all buttons have a non empty type attribute",
   "keywords": [
     "eslint",
     "eslintplugin",
-    "eslint-plugin"
+    "eslint-plugin",
+    "eslint-plugin-react"
   ],
   "author": "Robert Crous",
   "main": "lib/index.js",
   "scripts": {
-    "test": "mocha tests --recursive"
+    "test": "mocha tests --recursive",
+    "np": "./node_modules/.bin/np"
   },
   "dependencies": {
     "jsx-ast-utils": "^2.2.3",
@@ -18,7 +20,8 @@
   },
   "devDependencies": {
     "eslint": "~3.9.1",
-    "mocha": "^3.1.2"
+    "mocha": "^3.1.2",
+    "np": "^5.1.3"
   },
   "engines": {
     "node": ">=0.10.0"
